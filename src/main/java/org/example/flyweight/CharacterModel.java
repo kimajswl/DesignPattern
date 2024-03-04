@@ -1,4 +1,9 @@
 package org.example.flyweight;
 
-public class CharacterModel {
+public interface CharacterModel {
+    String getName();
+    void setName(String name);
+
+    int getAttackPower();
+
 }
