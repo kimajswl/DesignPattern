@@ -16,6 +16,5 @@ public class CharacterFactory {
             CharacterMap.put(character.getName(), character1);
         }
             return CharacterMap;
-        }
-
     }
+}
