@@ -1,5 +1,5 @@
 package org.example.composite;
 
-public interface ComponentMenuItem {
+public interface Menu {
     void print();
 }

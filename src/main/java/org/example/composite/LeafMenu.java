@@ -1,10 +1,10 @@
 package org.example.composite;
 
-public class LeafMenuItem implements ComponentMenuItem {
+public class LeafMenu implements Menu {
     private String name;
     private int price;
 
-    public LeafMenuItem(String name, int price) {
+    public LeafMenu(String name, int price) {
         this.name = name;
         this.price = price;
     }

@@ -2,10 +2,10 @@ package org.example.composite;
 
 public class CompositeClient {
     public static void main(String[] args) {
-        LeafMenuItem burger = new LeafMenuItem("햄버거", 4000);
-        LeafMenuItem fries = new LeafMenuItem("감자튀김", 3500);
-        LeafMenuItem coke = new LeafMenuItem("제로 콜라", 2000);
-        LeafMenuItem salad = new LeafMenuItem("샐러드", 5000);
+        LeafMenu burger = new LeafMenu("햄버거", 4000);
+        LeafMenu fries = new LeafMenu("감자튀김", 3500);
+        LeafMenu coke = new LeafMenu("제로 콜라", 2000);
+        LeafMenu salad = new LeafMenu("샐러드", 5000);
 
         CompositeMenu combo = new CompositeMenu();
         combo.addMenuItem(burger);
