@@ -1,5 +1,5 @@
 package org.example.proxy;
 
-public interface StationeryOrder { // 문구점
+public interface StationeryOrder {
     void order(String person[], String livingSupply[]);
 }

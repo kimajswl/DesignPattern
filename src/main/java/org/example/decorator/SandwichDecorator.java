@@ -1,17 +1,17 @@
 package org.example.decorator;
 
-public abstract class SandwichDecorator implements Subway{
-    protected Subway decoratedSandwich;
+public class SandwichDecorator implements Subway{
+    protected Subway subway;
 
-    public SandwichDecorator(Subway decoratedCoffee) {
-        this.decoratedSandwich = decoratedCoffee;
+    public SandwichDecorator(Subway subway) {
+        this.subway = subway;
     }
 
     public String getOrder() {
-        return decoratedSandwich.getOrder();
+        return subway.getOrder();
     }
 
     public int breadPrice() {
-        return decoratedSandwich.breadPrice();
+        return subway.breadPrice();
     }
 }

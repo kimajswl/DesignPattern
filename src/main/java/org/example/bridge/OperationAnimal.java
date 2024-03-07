@@ -10,10 +10,10 @@ public class OperationAnimal implements Operation{
     @Override
     public void giveFood() {
         if(animal.getHungry() <= 0) {
-            System.out.println("Full");
+            System.out.println("배부름");
         }
         else {
-            System.out.println("Feed the animals");
+            System.out.println("동물에게 먹이를 줌");
             animal.setHungry(animal.getHungry() - 10);
         }
     }
@@ -21,10 +21,10 @@ public class OperationAnimal implements Operation{
     @Override
     public void play() {
         if(animal.getBoring() <= 0) {
-            System.out.println("Tired");
+            System.out.println("지침");
         }
         else {
-            System.out.println("Play with animals");
+            System.out.println("놀아줌");
             animal.setBoring(animal.getBoring() - 10);
         }
     }
@@ -34,7 +34,7 @@ public class OperationAnimal implements Operation{
         if(animal.isSleepy() == true) {
             System.out.println("Zzzzzz.....");
         }
-        else System.out.println("I don't want to sleep!!");
+        else System.out.println("잠이 안옴");
     }
 
     @Override

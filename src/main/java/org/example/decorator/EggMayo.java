@@ -1,15 +1,15 @@
 package org.example.decorator;
 
 public class EggMayo extends SandwichDecorator{
-    public EggMayo(Subway decoratedSandwich) {
-        super(decoratedSandwich);
+    public EggMayo(Subway subway) {
+        super(subway);
     }
 
     public String getOrder() {
-        return decoratedSandwich.getOrder() + " + 에그 마요";
+        return subway.getOrder() + " + 에그 마요";
     }
 
     public int breadPrice() {
-        return decoratedSandwich.breadPrice() + 1500;
+        return subway.breadPrice() + 1500;
     }
 }

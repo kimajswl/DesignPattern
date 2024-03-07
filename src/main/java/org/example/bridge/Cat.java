@@ -39,10 +39,10 @@ public class Cat implements Animal{
     @Override
     public void printStatus() {
         System.out.println("-------------------------------------");
-        System.out.println("| I'm cat");
-        System.out.println("| I'm " + hungryPercent + " hungry.");
-        System.out.println("| I'm " + boringPercent + " boring.");
-        System.out.println("| I'm " + (sleepy ? "sleepy." : "Not sleepy."));
+        System.out.println("| 고양이");
+        System.out.println("| 배고픔 - " + hungryPercent);
+        System.out.println("| 지루함 - " + boringPercent );
+        System.out.println("| 졸림 -  " + (sleepy ? "T" : "F"));
         System.out.println("------------------------------------\n");
     }
 

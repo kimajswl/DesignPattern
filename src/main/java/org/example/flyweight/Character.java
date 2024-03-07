@@ -14,11 +14,6 @@ public class Character implements CharacterModel{
         return name;
     }
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
-    }
-
 
     @Override
     public int getAttackPower() {

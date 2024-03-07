@@ -17,9 +17,4 @@ public class CharacterFactory {
         }
             return CharacterMap;
     }
-
-    public void printResult(Map<String, Character> characterMap) {
-        System.out.println("캐릭터의 이름: " + characterMap.entrySet());
-        System.out.println(characterMap.hashCode());
-    }
 }
