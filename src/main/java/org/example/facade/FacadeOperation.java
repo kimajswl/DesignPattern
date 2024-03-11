@@ -15,9 +15,15 @@ public class FacadeOperation {
         this.videoFile = new VideoFile();
     }
 
-    public void operation() {
+    public void audioOperation() {
         audioMixer.audioMixer();
+    }
+
+    public void codeFactoryOperation() {
         codeFactory.codeFactory();
+    }
+
+    public void videoFileOperation() {
         videoFile.videoFile();
     }
 }

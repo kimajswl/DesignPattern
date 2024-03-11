@@ -4,6 +4,10 @@ public class FacadeClient {
     public static void main(String[] args) {
         FacadeOperation facadeOperation = new FacadeOperation();
 
-        facadeOperation.operation();
+        facadeOperation.videoFileOperation();
+
+        facadeOperation.codeFactoryOperation();
+
+        facadeOperation.audioOperation();
     }
 }

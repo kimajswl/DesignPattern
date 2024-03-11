@@ -7,10 +7,10 @@ public class OperationApp extends OperationAnimal{
     }
 
     public void outApp() {
-        System.out.println("******** Close the app ********");
+        System.out.println("******** 앱 닫기 ********");
     }
 
     public void inApp() {
-        System.out.println("******** Open the app ********");
+        System.out.println("******** 앱 실행 ********");
     }
 }

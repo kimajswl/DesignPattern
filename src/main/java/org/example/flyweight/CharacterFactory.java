@@ -8,13 +8,12 @@ public class CharacterFactory {
     private static final Map<String, Character> CharacterMap = new HashMap<>();
 
     public Map<String, Character> createCharacter(String name, int attackPower) {
-        Character character = new Character(name, attackPower);
-        CharacterModel characterModel = CharacterMap.get(character.getName());
+        CharacterModel characterModel = CharacterMap.get(name);
 
         if(characterModel == null) {
-            Character character1 = new Character(character.getName(), character.getAttackPower());
-            CharacterMap.put(character.getName(), character1);
+            Character character1 = new Character(name, attackPower);
+            CharacterMap.put(character1.getName(), character1);
         }
-            return CharacterMap;
+        return CharacterMap;
     }
 }
