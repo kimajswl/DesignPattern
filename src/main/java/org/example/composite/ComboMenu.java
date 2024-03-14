@@ -3,7 +3,7 @@ package org.example.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositeMenu implements Menu {
+public class ComboMenu implements Menu {
     private List<Menu> menuList = new ArrayList<>();
 
     public void addMenuItem(LeafMenu leafMenuItem) {
