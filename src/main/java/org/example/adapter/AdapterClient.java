@@ -11,8 +11,6 @@ public class AdapterClient {
         testMachine(japanMachine, japanMachine.JapanVoltage);
 
         testMachine(koreaAdapter, koreaMachine.KoreaVoltage);
-
-
     }
 
     static void testMachine(JapanPowerSocket japanPowerSocket, int voltage) {
