@@ -2,23 +2,13 @@ package org.example.bridge;
 
 public class BridgeClient {
     public static void main(String[] args) {
-        testAnimal(new Cat());
-        testAnimal(new Dog());
-    }
+        Sound dogSound = new Woof();
+        Sound catSound = new Meow();
 
-    public static void testAnimal(Animal animal) {
-        OperationApp operationApp = new OperationApp(animal);
-        OperationAnimal operationAnimal = new OperationAnimal(animal);
+        Animal dog = new Dog(dogSound);
+        dog.cryingSound();
 
-        operationApp.inApp();
-        animal.printStatus();
-
-        operationAnimal.giveFood();
-        operationAnimal.play();
-        operationAnimal.putToSleep();
-        animal.printStatus();
-
-        operationApp.outApp();
-        System.out.println("\n");
+        Animal cat = new Cat(catSound);
+        cat.cryingSound();
     }
 }
